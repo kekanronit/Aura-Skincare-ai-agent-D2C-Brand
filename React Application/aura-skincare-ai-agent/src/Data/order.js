@@ -1,0 +1,31 @@
+export const orders = [
+  {
+    id: "ORD-101",
+    customer: "oriya Sharma",
+    product: "Vitamin C Serum (30ml)",
+    value: "₹699",
+    status: "Out for Delivery",
+    courier: "BlueDart",
+    tracking: "BD-982103",
+    expected: "6 PM today",
+  },
+  {
+    id: "ORD-102",
+    customer: "Rahul Verma",
+    product: "Hydrating Sunscreen SPF 50",
+    value: "₹499",
+    status: "Delivered",
+    courier: "Delhivery",
+    tracking: "DL-441029",
+    delivered: "14 days ago",
+  },
+  {
+    id: "ORD-103",
+    customer: "Ananya Patel",
+    product: "Green Tea Face Wash + Toner",
+    value: "₹850",
+    status: "Processing",
+    ordered: "3 hours ago",
+    cancellationEligible: true,
+  },
+];
