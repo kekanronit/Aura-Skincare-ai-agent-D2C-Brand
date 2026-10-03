@@ -1,7 +1,15 @@
 import AgentStatus from "./AgentStatus";
 import CallControls from "./CallControls";
 
-function AgentPanel({ status, onStart, onEnd, isCallActive }) {
+function AgentPanel({
+  status,
+  onStart,
+  onEnd,
+  isCallActive,
+  language,
+  onLanguageChange,
+  onToolAction,
+}) {
   return (
     <section className="agent-panel">
       <div className="agent-avatar">🤖</div>
@@ -12,6 +20,9 @@ function AgentPanel({ status, onStart, onEnd, isCallActive }) {
         onStart={onStart}
         onEnd={onEnd}
         isCallActive={isCallActive}
+        language={language}
+        onLanguageChange={onLanguageChange}
+        onToolAction={onToolAction}
       />
     </section>
   );
